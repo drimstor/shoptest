@@ -29,20 +29,25 @@
 		display: none;
 	}
 	.item__preview-minis {
-		grid-template-columns: repeat(4,1fr);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.item__container-big {
-		@include size(314px,449px)
+		@include size(auto,auto)
 	}
 	.full-photo {
 		@include size(213px,372px)
 	}
 	.item__preview {
-		position: absolute;
-		top: 128px;
+		position: relative;
+		top: 88px;
+		width: 48%;
 	}
 	.item__left {
 		margin-top: 0;
+		position: absolute;
 	}
 	.item__description {
 		margin-top: 0;
