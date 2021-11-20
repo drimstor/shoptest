@@ -637,23 +637,3 @@ h1 {
     display: block;
   }
 }
-.link, .link:hover {
-  color: green;
-}
-.link:hover {
-  color: red;
-}
-
-.link:hover {
-  border: 1px solid red;
-  background-color: rgba(0, 188, 255, 0.4392156863);
-}
-
-.link, .link:hover {
-  font-size: 40px;
-  line-height: 50px;
-}
-
-.link, .link:hover {
-  width: 31.25%;
-}
