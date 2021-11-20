@@ -31,27 +31,30 @@
 	.item__preview-minis {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 	}
 	.item__container-big {
-		@include size(auto,auto)
+		@include size(auto,auto);
+		max-width: 314px;
 	}
 	.full-photo {
-		@include size(213px,372px)
+		@include size(auto,372px);
+		max-width: 213px;
 	}
 	.item__preview {
 		position: relative;
 		top: 88px;
 		width: 48%;
 	}
+
 	.item__left {
 		margin-top: 0;
 		position: absolute;
 	}
 	.item__description {
 		margin-top: 0;
-		width: 50%;
+		width: 48%;
 		.item__sizes-select{
 			width: 100%;
 		}
@@ -95,6 +98,13 @@
 	}
 	.item__subtitle {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 733px) {
+	.item__preview-minis {
+		justify-content: space-between;
+
 	}
 }
 

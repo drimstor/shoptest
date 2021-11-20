@@ -1,17 +1,16 @@
-
 .mob {
 	display: none;
 	z-index: 1;
 }
 
-
 .wrapp{
 	display: flex;
-	justify-content:flex-end;
+	justify-content:center;
 	align-items: center;
 	position: relative;
+	margin-top: 100px;
+	margin-bottom: 50px;
 }
-
 
 .slick-slider{
 	min-width: 0;
@@ -20,7 +19,7 @@
 .slick-list {
 	overflow: hidden;
 }
-/* Лента слайдов */
+
 .slick-track{
 	display: flex;
 	align-items: flex-start;
@@ -29,27 +28,8 @@
 
 .slider__item {
 	padding: 0px 15px;
-	margin-left: auto;
+
 }
-
-
-
-.wrapp {
-	margin-top: 100px;
-	margin-bottom: 50px;
-}
-
-
-.slider {
-	padding: 0px 0px;
-}
-
-.slider .slick-arrow {
-	visibility: hidden;
-}
-
-
-
 
 .slider .slick-arrow{
 	position: absolute;
