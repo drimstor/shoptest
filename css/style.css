@@ -395,7 +395,7 @@ Color: black;
 .submit__btn {
   width: 50%;
   position: relative;
-border-radius: 0;
+-WebKit-border-radius: 0;
 
 }
 .submit__btn input {
@@ -411,7 +411,7 @@ border-radius: 0;
   letter-spacing: 0.1em;
   text-align: center;
   cursor: pointer;
-border-radius: 0;
+  -WebKit-border-radius: 0;
 }
 
 .item__sizes-bottom {
