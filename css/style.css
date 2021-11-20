@@ -496,7 +496,7 @@ h1 {
 @media screen and (max-width: 769px) {
   .container {
     width: auto;
-    padding: 40px;
+    padding: 20px;
   }
 
   .item__text-feature {
@@ -546,7 +546,7 @@ h1 {
 
   .item__description {
     margin-top: 0;
-    width: 50%;
+    width: 49%;
   }
   .item__description .item__sizes-select {
     width: 100%;
