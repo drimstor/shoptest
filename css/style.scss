@@ -1,0 +1,370 @@
+@import 'nullstyle.scss';
+@import 'fonts.scss';
+@import 'slider.scss';
+
+//__________________
+
+
+body{
+	font-family: 'FuturaPT', sans-serif;
+	color: #000;
+	font-size: 18px;
+	background: white;
+}
+
+.container {
+	width: 1320px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+h1 {
+	font-family: 'Inter';
+}
+
+//__________________
+
+@mixin size($w, $h)
+{
+	width: $w;
+	height: $h;
+}
+
+
+@mixin text($fz, $lh)
+{
+	font-size: $fz;
+	line-height: $lh;
+}
+
+.item__body {
+	display: flex;
+	justify-content: space-between;
+}
+
+//__________________
+
+.item__left {
+	width: 140px;
+	margin-top: 100px;
+	margin-right: 70px;
+}
+
+.item__left-nav {
+	width: 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 63px;
+	a {
+		text-transform: uppercase;
+		opacity: 0.3;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		@include text(16px,21px);
+	}
+	i.right {
+		border: solid black;
+		border-width: 0 1px 1px 0;
+		display: inline-block;
+		padding: 2px;
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		width: 3px;
+		height: 3px;
+		opacity: 0.3;
+	}
+}
+
+.item__left-feature {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+//__________________
+
+.full-photo {
+	@include size(268px,469px)
+}
+
+.item__preview-mini.active {
+	border: 2px solid black;
+	margin-top: -2px;
+}
+
+.item__preview-mini {
+	@include size (67px,67px);
+	border: 0;
+	cursor: pointer;
+	img {
+		@include size (38px,67px);
+	}
+}
+
+.item__preview-minis {
+	padding-top: 15px;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 15px;
+
+}
+
+.item__container-big {
+	@include size (396px,566px);
+	background: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//__________________
+
+.item__description {
+	margin-left: auto;
+	margin-top: 100px;
+}
+
+.item__subtitle {
+	width: 510px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	h1 {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
+
+.item__price {
+	@include text(18px,23px);
+	margin-top: 5px;
+}
+
+
+.heart {
+	@include size(50px,50px);
+	border-radius: 50%;
+	background: #EEEEEE;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: -75px;
+}
+
+.item__sizes-select {
+	display: flex;
+	margin-top: 30px;
+	@include size(450px,50px);
+}
+
+.select {
+	width: 50%;
+	position: relative;
+	
+	&::after {
+		content: '';
+		border: solid black;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 4px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	select {
+		width: 100%;
+		background: #EEEEEE;
+		font-family: 'FuturaPT';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 21px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		padding: 15px 5px 15px 18px;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		border: none;
+		position: relative;
+		outline: none;
+		option {
+			border: 1px solid black;
+			background: white;
+			height: 50px;
+			color: black;
+		}
+	}
+	
+} 
+
+.submit__btn {
+	width: 50%;
+	position: relative;
+	input {
+		width: 100%;
+		height: 50px;
+		border: 0;
+		background: #000000;
+		color: #ffffff;
+		font-family: 'FuturaPT';
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 21px;
+		letter-spacing: 0.1em;
+		text-align: center;
+		cursor: pointer;
+	}
+}
+
+.item__sizes-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+	a {
+		@include text(16px,21px);
+	}
+	.circles {
+		display: flex;
+		.circle {
+		@include size(41px,41px);
+		@include text(14px,18px);
+		background: #EEEEEE;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		margin-right: 5px;
+		&.none {
+			background: rgb(255, 255, 255);
+			border: 1px solid #E5E5E5;
+			position: relative;
+			a {
+				position: relative;
+				z-index: 2;
+			}
+			&::before {
+				content: '';
+				width: 1px;
+				height: 40px;
+				background: #E5E5E5;
+				position: absolute;
+				top: 0;
+				transform: rotate(-35deg);
+			}
+		}
+		}
+	}
+}
+
+
+
+.item__sizes {
+	width: 450px;
+}
+
+//__________________
+
+.item__text {
+	width: 450px;
+	margin-top: 35px;
+	@include text(18px, 23px);
+
+}
+
+.item__text-feature {
+	margin-top: 50px;
+	display: none;
+	img {
+		@include size(67px,67px)
+	}
+}
+
+.wrapp {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'media.scss';
+
+
+
+
+//__________________
+// Вложенность
+
+.link 
+{
+	color: green;
+	&:hover
+	{
+		color: red;
+	}
+}
+
+//__________________
+// Переменные
+
+$color_1: red;
+$pad: 100px;
+
+//__________________
+// Шаблоны
+
+%border
+{
+	border: 1px solid $color_1;
+	background-color: rgba(0, 188, 255, .4392156862745098);
+	
+}
+
+.link:hover
+{
+@extend %border;
+@extend .link;
+}
+
+//__________________
+// Миксины
+
+@mixin text($fz, $lh)
+{
+	font-size: $fz;
+	line-height: $lh;
+}
+
+
+
+.link
+{
+	@include text(40px,50px);
+}
+
+//__________________
+// Математические вычисления
+
+.link 
+{
+	width: 300px / 960px *100%;
+}
+
+//__________________

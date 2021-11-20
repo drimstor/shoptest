@@ -1,0 +1,128 @@
+@mixin size($w, $h)
+{
+	width: $w;
+	height: $h;
+}
+
+
+@media screen and (min-width: 1439px) {
+	
+}
+
+@media screen and (max-width: 1199px) {
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 769px) {	
+	.container {
+		width: auto;
+		padding: 40px;
+	}
+	.item__text-feature {
+		display: flex;
+	}
+	.item__left-feature {
+		display: none;
+	}
+	.item__preview-minis {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.item__container-big {
+		@include size(314px,449px)
+	}
+	.full-photo {
+		@include size(213px,372px)
+	}
+	.item__preview {
+		position: absolute;
+		top: 128px;
+	}
+	.item__left {
+		margin-top: 0;
+	}
+	.item__description {
+		margin-top: 0;
+		width: 50%;
+		.item__sizes-select{
+			width: 100%;
+		}
+		.item__sizes {
+			width: 100%;
+		}
+		.item__text {
+			width: 100%;
+		}
+	}
+	.item__sizes-select {
+		flex-direction: column;
+		.select {
+			width: 100%;
+		}
+		.submit__btn {
+			margin-top: 6px;
+			width: 100%;
+			margin-bottom: 35px;
+			position: relative;
+			&::after{
+				content: '';
+				position: absolute;
+				background: url(../img/Vecto.png) no-repeat;
+				@include size(18px,18px);
+				top: 17px;
+				right: 17px;
+			}
+			input {
+				text-align: left;
+				padding-left: 18px;
+			}
+			.heart {
+				display: none;
+			}
+		}
+		
+	}
+	.item__sizes-bottom {
+		margin-top: 85px;
+	}
+	.item__subtitle {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	
+	.wrapp {
+		display: block;
+	}
+	.container{
+		padding: 25px 20px;
+	}
+	.item__left{
+		display: none;
+	}
+	.item__preview{
+		display: none;
+	}
+	.item__description {
+		width: 100%;
+	}
+	.item__sizes {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.item__sizes-bottom {
+		margin-top: 20px;
+	}
+	.mob {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	
+}
