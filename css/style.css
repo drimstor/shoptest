@@ -353,6 +353,7 @@ h1 {
 .select {
   width: 50%;
   position: relative;
+Color: black;
 }
 .select::after {
   content: "";
@@ -382,6 +383,7 @@ h1 {
   border: none;
   position: relative;
   outline: none;
+Color: black;
 }
 .select select option {
   border: 1px solid black;
@@ -393,6 +395,8 @@ h1 {
 .submit__btn {
   width: 50%;
   position: relative;
+border-radius: 0;
+
 }
 .submit__btn input {
   width: 100%;
