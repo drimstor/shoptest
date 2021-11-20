@@ -25,12 +25,6 @@
 	align-items: flex-start;
 }
 
-
-.slider__item {
-	padding: 0px 15px;
-
-}
-
 .slider .slick-arrow{
 	position: absolute;
 	top: 50%;
@@ -59,14 +53,16 @@
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	left: 35%;
+	width: 144px;
+	left: 50%;
 	bottom: -30px;
+	margin-left: -72px;
 }
 .slider .slick-dots li{
 	list-style: none;
-	margin: 0px 5px;
-	
+	margin: 0px 10px;
 }
+
 .slider .slick-dots button{
 	font-size: 0;
 	width: 4px;
@@ -75,7 +71,6 @@
 	border-radius: 50%;
 	border: 0;
 	cursor: pointer;
-	
 }
 
 .slider .slick-dots li.slick-active button{

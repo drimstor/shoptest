@@ -82,10 +82,6 @@ ul, li {
           align-items: flex-start;
 }
 
-.slider__item {
-  padding: 0px 15px;
-}
-
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -122,13 +118,15 @@ ul, li {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  left: 35%;
+  width: 144px;
+  left: 50%;
   bottom: -30px;
+  margin-left: -72px;
 }
 
 .slider .slick-dots li {
   list-style: none;
-  margin: 0px 5px;
+  margin: 0px 10px;
 }
 
 .slider .slick-dots button {
@@ -354,6 +352,7 @@ h1 {
 }
 .select select {
   width: 100%;
+  color: #000;
   background: #EEEEEE;
   font-family: "FuturaPT";
   font-size: 16px;
@@ -379,6 +378,7 @@ h1 {
 .submit__btn {
   width: 50%;
   position: relative;
+  border-radius: 0;
 }
 .submit__btn input {
   width: 100%;
