@@ -40,7 +40,7 @@
 	}
 	.full-photo {
 		@include size(auto,372px);
-		max-width: 213px;
+		// max-width: 213px;
 	}
 	.item__preview {
 		position: relative;
@@ -108,7 +108,10 @@
 }
 
 @media screen and (max-width: 426px) {
-	
+	.item__container-big {
+		width: 100%;
+		margin: 0 auto;
+	}
 	.wrapp {
 		display: block;
 	}
@@ -135,6 +138,7 @@
 	.mob {
 		display: block;
 	}
+
 }
 
 @media screen and (max-width: 320px) {
