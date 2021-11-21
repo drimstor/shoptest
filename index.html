@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ShopTestMarkup</title>
-	<script src="https://kit.fontawesome.com/ede400dc38.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<title>SCSS</title>
 </head>
@@ -63,22 +62,22 @@
 					</div>
 				</div>
 				<div class="item__sizes">
-					<div class="item__sizes-select">
-						<!-- <form class="form" action="" method="post"> -->
-							<div class="select">
-								<select name="size" id="size">
-									<option value="S">Размер: S</option>
-									<option value="M">Размер: M</option>
-									<option value="L">Размер: L</option>						
-								</select>
-							</div>					
+					<div class="item__sizes-select">						
+							<div class="form-group">
+								<button class="dropdown__button">Размер: S</button>
+								<ul class="dropdown__list">
+									<li class="dropdown__list-item" data-value='size S'>Размер: S</li>
+									<li class="dropdown__list-item" data-value='size M'>Размер: M</li>
+									<li class="dropdown__list-item" data-value='size L'>Размер: L</li>
+								</ul>
+								<input type="text" name="size" class="dropdown__input-hidden">
+							</div>
 							<div class="submit__btn">
 								<div class="submit">В КОРЗИНУ</div>
 								<div class="heart">
 									<img src="img/Vector.svg" alt="heart">
 								</div>
-							</div>		
-						<!-- </form> -->												
+							</div>												
 					</div>
 					<div class="item__sizes-bottom">
 						<div class="circles">
@@ -126,7 +125,7 @@
 	</div>
 </section>
 	
-	<script type="text/javascript"  src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/slider.js"></script>
