@@ -63,7 +63,7 @@ ul, li {
           align-items: center;
   position: relative;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   width: 100%;
 }
 
@@ -141,7 +141,7 @@ ul, li {
   position: absolute;
   width: 144px;
   left: 50%;
-  bottom: -30px;
+  bottom: -35px;
   margin-left: -72px;
 }
 
@@ -402,10 +402,18 @@ h1 {
   width: 50%;
   position: relative;
 }
-.submit__btn input {
+.submit__btn .submit {
   width: 100%;
   height: 50px;
-  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #000000;
   color: #ffffff;
   font-family: "FuturaPT";
@@ -415,8 +423,6 @@ h1 {
   letter-spacing: 0.1em;
   text-align: center;
   cursor: pointer;
-  -webkit-border-radius: 0;
-  -webkit-appearance: none;
 }
 
 .item__sizes-bottom {
@@ -434,6 +440,7 @@ h1 {
 .item__sizes-bottom a {
   font-size: 16px;
   line-height: 21px;
+  text-align: center;
 }
 .item__sizes-bottom .circles {
   display: -webkit-box;
@@ -579,7 +586,7 @@ h1 {
     width: 100%;
   }
   .item__sizes-select .submit__btn {
-    margin-top: 6px;
+    margin-top: 10px;
     width: 100%;
     margin-bottom: 35px;
     position: relative;
@@ -593,8 +600,10 @@ h1 {
     top: 17px;
     right: 17px;
   }
-  .item__sizes-select .submit__btn input {
-    text-align: left;
+  .item__sizes-select .submit__btn .submit {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-left: 18px;
   }
   .item__sizes-select .submit__btn .heart {
@@ -652,10 +661,22 @@ h1 {
   }
 
   .item__sizes-bottom {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .mob {
     display: block;
+  }
+}
+@media screen and (max-width: 333px) {
+  .item__sizes-bottom .circles .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .item__sizes-bottom .circles .circle a {
+    font-size: 12px;
+  }
+  .item__sizes-bottom .circles .circle.none::before {
+    height: 28px;
   }
 }
