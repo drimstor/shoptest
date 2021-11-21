@@ -13,7 +13,7 @@ body{
 }
 
 .container {
-	width: 1220px;
+	width: 1300px;
 	margin: 0 auto;
 	padding: 0 40px;
 }
@@ -297,6 +297,119 @@ h1 {
 }
 
 
+//__________________
+
+.form-group {
+	width: 50%;
+	position: relative;
+}
+
+.dropdown__button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	text-align: left;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #EEEEEE;
+	border: 1px solid #EEEEEE;
+	border-radius: 0;
+	padding: 15px 5px 15px 18px;
+	color: #000;
+	font-family: 'FuturaPT';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	cursor: pointer;
+	z-index: 1;
+	&:focus {
+		outline: none;
+	}
+	&::after {
+		content: '';
+		border: solid black;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 4px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		position: absolute;
+		top: 17px;
+		right: 20px;
+		z-index: 9999999;
+		transition: 0.3s all ease;
+	}
+}
+
+
+.dropdown__list {
+	transform: translate(0,-50px);
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	border: 1px solid black;
+	transition: 0.3s all ease;
+	&.visible {
+		visibility: visible;
+		opacity: 1;
+	}
+	&::after {
+		content: '';
+		border: solid black;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 4px;
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+		position: absolute;
+		top: 23px;
+		right: 20px;
+		z-index: 5;
+		transition: 0.3s all ease;
+	}
+	.dropdown__list-item {
+		position: relative;
+		z-index: 5;
+		display: block;
+		width: 100%;
+		text-align-last: left;
+		height: 49px;
+		background: #fff;
+		border-bottom: 1px solid black;
+		border-radius: 0;
+		padding: 15px 5px 15px 18px;
+		color: #000;
+		font-family: 'FuturaPT';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 21px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		cursor: pointer;
+		text-align: left;
+		transition: 0.3s all ease;
+		&:hover {
+			background: #EEE;
+			transition: 0.3s all ease;
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+
+
+.dropdown__input-hidden {
+	display: none;
+}
 
 
 
