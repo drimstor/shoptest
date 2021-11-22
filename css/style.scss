@@ -180,29 +180,29 @@ h1 {
 		align-items: center;
 		cursor: pointer;
 		margin-right: 5px;
-		&.none {
-			background: rgb(255, 255, 255);
-			border: 1px solid #E5E5E5;
-			position: relative;
-			a {
-				position: relative;
-				z-index: 2;
-			}
-			&::before {
-				content: '';
-				width: 1px;
-				height: 40px;
-				background: #E5E5E5;
-				position: absolute;
-				top: 0;
-				transform: rotate(-35deg);
-			}
-		}
-		}
+		
 	}
 }
 
-
+.circle.none {
+	background: rgb(255, 255, 255);
+	border: 1px solid #E5E5E5;
+	position: relative;
+	a {
+		position: relative;
+		z-index: 2;
+	}
+	&::before {
+		content: '';
+		width: 1px;
+		height: 40px;
+		background: #E5E5E5;
+		position: absolute;
+		top: 0;
+		transform: rotate(-35deg);
+	}
+}
+}
 
 .item__sizes {
 	width: 450px;

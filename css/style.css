@@ -495,16 +495,16 @@ h1 {
   cursor: pointer;
   margin-right: 5px;
 }
-.item__sizes-bottom .circles .circle.none {
+.item__sizes-bottom .circle.none {
   background: white;
   border: 1px solid #E5E5E5;
   position: relative;
 }
-.item__sizes-bottom .circles .circle.none a {
+.item__sizes-bottom .circle.none a {
   position: relative;
   z-index: 2;
 }
-.item__sizes-bottom .circles .circle.none::before {
+.item__sizes-bottom .circle.none::before {
   content: "";
   width: 1px;
   height: 40px;
@@ -740,7 +740,7 @@ h1 {
   .item__sizes-select .submit__btn::after {
     content: "";
     position: absolute;
-    background: url(../img/Vecto.png) no-repeat;
+    background: url(../img/Vecto.svg) no-repeat;
     width: 18px;
     height: 18px;
     top: 17px;
