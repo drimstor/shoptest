@@ -4,6 +4,12 @@
 	height: $h;
 }
 
+@mixin text($w, $h)
+{
+	font-size: $w;
+	line-height: $h;
+}
+
 
 @media screen and (min-width: 1439px) {
 	
@@ -99,20 +105,37 @@
 	.item__subtitle {
 		width: 100%;
 	}
+	.item__sizes-select {
+		margin-top: 30px;
+		height: auto;
+	}
+	.item__sizes-bottom {
+		margin-top: 0;
+	}
 }
 
 @media screen and (max-width: 733px) {
-	.item__preview-minis {
+	.desk.slider .slick-dots {
 		justify-content: space-between;
+	}
+}
+@media screen and (max-width: 561px) {
+	.desk.slider .slick-dots{
+		bottom: -245px;
 	}
 }
 
 @media screen and (max-width: 426px) {
+	.desk {
+		display: none;
+		visibility: hidden;
+	}
 	.item__container-big {
 		max-width: 390px;
 	}
 	.wrapp {
 		display: block;
+		margin-top: 0;
 	}
 	.container{
 		padding: 25px 20px;
@@ -137,7 +160,39 @@
 	.mob {
 		display: block;
 	}
-	
+	.submit__btn .submit {
+		height: 40px;
+	}
+	.item__sizes-select .submit__btn::after {
+		top: 12px;
+		right: 17px;
+	}
+	.dropdown__button {
+		height: 40px;
+		padding: 10px 5px 10px 18px;
+	}
+	.dropdown__button::after {
+		top: 12px;
+	}
+	.dropdown__list {
+		transform: translate(0, -40px);
+	}
+	.dropdown__list .dropdown__list-item {
+		height: 39px;
+		padding: 10px 5px 10px 18px;
+	}
+	.item__subtitle h1 {
+		@include text(20px,24px);
+	}
+	.item__price {
+		@include text(16px,20px);
+	}
+	.item__text-feature {
+		margin-top: 30px;
+	}
+	.dropdown__list::after {
+		top: 17px;
+	}
 }
 
 @media screen and (max-width: 333px) {
@@ -152,4 +207,5 @@
 			}
 		}
 	}
+
 }
