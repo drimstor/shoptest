@@ -1,43 +1,3 @@
-const photos = [
-	'img/jeans.png',
-	'img/jeans2.png',
-	'img/jeans.png',
-	'img/jeans2.png',
-	'img/jeans.png',
-	'img/jeans2.png'
-  ];
-  
-  
-  let previews = document.querySelectorAll('.item__preview-mini');
-  let fullPhoto = document.querySelector('.full-photo');
-
-  
-  fullPhoto.addEventListener('click', (e) => {
-	e.preventDefault();
-  })
-
-
-  let addThumbnailClickHandler = (preview, photo) => {
-	preview.addEventListener('mouseover', (e) => {
-		for (let i = 0; i < previews.length; i++){
-		  if (previews[i].classList.contains('active')) {
-			  previews[i].classList.remove('active')
-		  }
-		}
-		e.preventDefault();
-		fullPhoto.src = photo;
-		preview.classList.add('active')
-	});
-  };
- 
-  for (let i = 0; i < previews.length; i++) {
-	addThumbnailClickHandler(previews[i], photos[i]);
-  }
-
-  
-  
-/* ___________________________________________________________________ */
-
 let dropdownBtn = document.querySelector('.dropdown__button');
 const dropdownList = document.querySelector('.dropdown__list');
 const dropdownItems = document.querySelectorAll('.dropdown__list-item');
@@ -68,3 +28,38 @@ document.addEventListener('keydown', (e) => {
 		dropdownList.classList.remove('visible');
 	}
 })
+
+  
+/* ___________________________________________________________________ */
+
+
+$(document).ready(function(){
+
+
+	// Слайдер
+	
+		$('.slider').slick({
+			arrows:true,
+			dots:true,
+			slidesToShow:1,
+			autoplay:true,
+			speed:1000,
+			autoplaySpeed: 3000,
+			// centerMode: true,
+			responsive:[
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow:1
+					}
+				},
+				{
+					breakpoint: 550,
+					settings: {
+						slidesToShow:1
+					}
+				}
+			]
+		});
+	});
+	
