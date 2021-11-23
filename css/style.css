@@ -471,12 +471,14 @@ h1 {
   line-height: 21px;
   text-align: center;
 }
-.item-sizes__bottom .item-sizes__circles {
+
+.item-sizes__circles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.item-sizes__bottom .item-sizes__circles .item-sizes__circle {
+
+.item-sizes__circle {
   width: 41px;
   height: 41px;
   font-size: 14px;
@@ -495,16 +497,17 @@ h1 {
   cursor: pointer;
   margin-right: 5px;
 }
-.item-sizes__bottom .item-sizes__circle.none {
+
+.item-sizes__circle.none {
   background: white;
   border: 1px solid #E5E5E5;
   position: relative;
 }
-.item-sizes__bottom .item-sizes__circle.none a {
+.item-sizes__circle.none a {
   position: relative;
   z-index: 2;
 }
-.item-sizes__bottom .item-sizes__circle.none::before {
+.item-sizes__circle.none::before {
   content: "";
   width: 1px;
   height: 40px;
@@ -881,14 +884,14 @@ h1 {
   }
 }
 @media screen and (max-width: 333px) {
-  .item-sizes__bottom .item-sizes__circles .item-sizes__circle {
+  .item-sizes__circle {
     width: 30px;
     height: 30px;
   }
-  .item-sizes__bottom .item-sizes__circles .item-sizes__circle a {
+  .item-sizes__circle a {
     font-size: 12px;
   }
-  .item-sizes__bottom .item-sizes__circles .item-sizes__circle.none::before {
+  .item-sizes__circle.none::before {
     height: 28px;
   }
 }

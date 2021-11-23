@@ -196,7 +196,7 @@
 }
 
 @media screen and (max-width: 333px) {
-	.item-sizes__bottom .item-sizes__circles .item-sizes__circle{
+	.item-sizes__circle{
 		@include size(30px,30px);
 		a {
 			font-size: 12px;

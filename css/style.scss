@@ -168,22 +168,24 @@ h1 {
 		@include text(16px,21px);
 		text-align: center;
 	}
-	.item-sizes__circles {
-		display: flex;
-		.item-sizes__circle {
-		@include size(41px,41px);
-		@include text(14px,18px);
-		background: #EEEEEE;
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		margin-right: 5px;
-		
-	}
 }
 
+.item-sizes__circles {
+	display: flex;
+	
+}
+.item-sizes__circle {
+	@include size(41px,41px);
+	@include text(14px,18px);
+	background: #EEEEEE;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-right: 5px;
+	
+}
 .item-sizes__circle.none {
 	background: rgb(255, 255, 255);
 	border: 1px solid #E5E5E5;
@@ -202,7 +204,7 @@ h1 {
 		transform: rotate(-35deg);
 	}
 }
-}
+
 
 .item-sizes {
 	width: 450px;
