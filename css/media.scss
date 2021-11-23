@@ -41,11 +41,11 @@
 		align-items: center;
 	}
 	.item__container-big {
-		@include size(auto,auto);
+		@include size(auto,449px);
 		max-width: 314px;
 	}
 	.full-photo {
-		@include size(auto,372px);
+		@include size(213px,372px);
 		// max-width: 213px;
 	}
 	.item__preview {
@@ -132,6 +132,7 @@
 	}
 	.item__container-big {
 		max-width: 390px;
+		height: 400px;
 	}
 	.wrapp {
 		display: block;
@@ -192,6 +193,9 @@
 	}
 	.dropdown__list::after {
 		top: 17px;
+	}
+	.full-photo {
+		@include size(190px,331px);
 	}
 }
 
