@@ -119,7 +119,7 @@ h1 {
 }
 
 
-.heart {
+.heart__btn {
 	@include size(50px,50px);
 	border-radius: 50%;
 	background: #EEEEEE;
@@ -132,16 +132,16 @@ h1 {
 	right: -75px;
 }
 
-.item__sizes-select {
+.item-sizes__select {
 	display: flex;
 	margin-top: 30px;
 	@include size(450px,50px);
 }
 
-.submit__btn {
+.item-sizes__submit {
 	width: 50%;
 	position: relative;
-	.submit {
+	.submit__btn {
 		width: 100%;
 		height: 50px;
 		display: flex;
@@ -159,7 +159,7 @@ h1 {
 	}
 }
 
-.item__sizes-bottom {
+.item-sizes__bottom {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -168,9 +168,9 @@ h1 {
 		@include text(16px,21px);
 		text-align: center;
 	}
-	.circles {
+	.item-sizes__circles {
 		display: flex;
-		.circle {
+		.item-sizes__circle {
 		@include size(41px,41px);
 		@include text(14px,18px);
 		background: #EEEEEE;
@@ -184,7 +184,7 @@ h1 {
 	}
 }
 
-.circle.none {
+.item-sizes__circle.none {
 	background: rgb(255, 255, 255);
 	border: 1px solid #E5E5E5;
 	position: relative;
@@ -204,7 +204,7 @@ h1 {
 }
 }
 
-.item__sizes {
+.item-sizes {
 	width: 450px;
 }
 

@@ -61,22 +61,22 @@
 	.item__description {
 		margin-top: 0;
 		width: 48%;
-		.item__sizes-select{
+		.item-sizes__select{
 			width: 100%;
 		}
-		.item__sizes {
+		.item-sizes {
 			width: 100%;
 		}
 		.item__text {
 			width: 100%;
 		}
 	}
-	.item__sizes-select {
+	.item-sizes__select {
 		flex-direction: column;
 		.form-group {
 			width: 100%;
 		}
-		.submit__btn {
+		.item-sizes__submit {
 			margin-top: 10px;
 			width: 100%;
 			margin-bottom: 35px;
@@ -84,32 +84,32 @@
 			&::after{
 				content: '';
 				position: absolute;
-				background: url(../img/Vecto.png) no-repeat;
+				background: url(../img/Vecto.svg) no-repeat;
 				@include size(18px,18px);
 				top: 17px;
 				right: 17px;
 			}
-			.submit {
+			.submit__btn {
 				justify-content: flex-start;
 				padding-left: 18px;
 			}
-			.heart {
+			.heart__btn {
 				display: none;
 			}
 		}
 		
 	}
-	.item__sizes-bottom {
+	.item-sizes__bottom {
 		margin-top: 85px;
 	}
 	.item__subtitle {
 		width: 100%;
 	}
-	.item__sizes-select {
+	.item-sizes__select {
 		margin-top: 30px;
 		height: auto;
 	}
-	.item__sizes-bottom {
+	.item-sizes__bottom {
 		margin-top: 0;
 	}
 }
@@ -149,21 +149,21 @@
 	.item__description {
 		width: 100%;
 	}
-	.item__sizes {
+	.item-sizes {
 		display: flex;
 		flex-direction: column-reverse;
 	}
 
-	.item__sizes-bottom {
+	.item-sizes__bottom {
 		margin-top: 25px;
 	}
 	.mob {
 		display: block;
 	}
-	.submit__btn .submit {
+	.item-sizes__submit .submit__btn {
 		height: 40px;
 	}
-	.item__sizes-select .submit__btn::after {
+	.item-sizes__select .item-sizes__submit::after {
 		top: 12px;
 		right: 17px;
 	}
@@ -196,7 +196,7 @@
 }
 
 @media screen and (max-width: 333px) {
-	.item__sizes-bottom .circles .circle{
+	.item-sizes__bottom .item-sizes__circles .item-sizes__circle{
 		@include size(30px,30px);
 		a {
 			font-size: 12px;
